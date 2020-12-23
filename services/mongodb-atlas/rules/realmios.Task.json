@@ -1,0 +1,40 @@
+{
+    "collection": "Task",
+    "database": "realmios",
+    "id": "5fd126348f4fa9fa758c194a",
+    "relationships": {
+        "assignee": {
+            "ref": "#/relationship/mongodb-atlas/realmios/User",
+            "source_key": "assignee",
+            "foreign_key": "_id",
+            "is_list": false
+        }
+    },
+    "schema": {
+        "bsonType": "object",
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "assignee": {
+                "bsonType": "objectId"
+            },
+            "name": {
+                "bsonType": "string"
+            },
+            "status": {
+                "bsonType": "string"
+            }
+        },
+        "required": [
+            "_id",
+            "_partition",
+            "name",
+            "status"
+        ],
+        "title": "Task"
+    }
+}
