@@ -1,23 +1,10 @@
 {
-    "id": "5fd122aa1919a2df047bb683",
+    "id": "5fe3abefee30e67adb9dadb2",
     "name": "mongodb-atlas",
     "type": "mongodb-atlas",
     "config": {
         "clusterName": "Cluster0",
         "readPreference": "primary",
-        "sync": {
-            "state": "enabled",
-            "database_name": "realmios",
-            "partition": {
-                "key": "_partition",
-                "type": "string",
-                "required": true,
-                "permissions": {
-                    "read": true,
-                    "write": true
-                }
-            }
-        },
         "wireProtocolEnabled": false
     },
     "version": 1
